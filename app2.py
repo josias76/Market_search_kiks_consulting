@@ -16,12 +16,12 @@ from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 # ======================== CONFIG ========================
-st.set_page_config(page_title="Analyse Douanière", layout="wide")
+st.set_page_config(page_title="kiks Analysis", layout="wide")
 
 # Chemin vers les données et mot de passe admin
 data_dir = "data"
 admin_password = "admin123"
-user_login = {"admin": "admin123", "analyste": "pass456"}
+user_login = {"admin": "admin123", "analyste": "pass456","gael":"Glen2808"}
 
 # ==================== UTILS =====================
 def list_categories():
@@ -77,7 +77,7 @@ if 'auth' not in st.session_state:
     st.session_state.auth = False
 
 if not st.session_state.auth:
-    st.title("📦 Analyse des Données Douanières")
+    st.title("📦Bienvenue à l'espace Kiks consulting Data")
     st.markdown("### 🔐 Connexion requise")
     username = st.text_input("Identifiant")
     password = st.text_input("Mot de passe", type="password")
