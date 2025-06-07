@@ -21,7 +21,7 @@ st.set_page_config(page_title="kiks Analysis", layout="wide")
 # Chemin vers les données et mot de passe admin
 data_dir = "data"
 admin_password = "admin123"
-user_login = {"admin": "admin123", "analyste": "pass456","gael":"Glen2808"}
+user_login = {"admin": "admin123", "analyste": "pass456","gael":"Glen2808","kobedi":"kikunda"}
 
 # ==================== UTILS =====================
 def list_categories():
