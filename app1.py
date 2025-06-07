@@ -60,6 +60,7 @@ def show_dashboard(df):
     if colonnes_cat:
         col_cat = st.selectbox("🏷️ Choisir une variable catégorielle :", colonnes_cat)
         counts = df[col_cat].value_counts().reset_index()
+        
         fig_bar = px.bar(counts, x='index', y=col_cat, title=f"Répartition de {col_cat}")
         st.plotly_chart(fig_bar, use_container_width=True)
         st.markdown(f"📌 **Interprétation** : Cette répartition nous renseigne sur la dominance de certaines catégories dans les échanges douaniers.")
